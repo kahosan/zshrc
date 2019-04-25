@@ -1,4 +1,4 @@
-ZSH_THEME="luobo"
+ZSH_THEME="kphoen"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -62,10 +62,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-  zsh-proxy
-)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,9 +83,6 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -100,5 +94,8 @@ source $ZSH/oh-my-zsh.sh
 alias chcolor='/data/data/com.termux/files/home/.termux/colors.sh'
 alias chfont='/data/data/com.termux/files/home/.termux/fonts.sh'
 source /data/data/com.termux/files/home/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias proxy="export http_proxy="http://127.0.0.1:7890";export https_proxy="https://127.0.0.1:7890""
+alias noproxy="unset http_proxy;unset https_proxy"
+export EDITOR=vim
+alias ps5="export ALL_PROXY="socks5://127.0.0.1:7891""
+alias nos5="unset ALL_PROXY"
