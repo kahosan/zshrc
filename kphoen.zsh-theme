@@ -1,8 +1,8 @@
 # kphoen.zsh-theme
 
 if [[ "$TERM" != "dumb" ]] && [[ "$DISABLE_LS_COLORS" != "true" ]]; then
-    PROMPT='%{$fg[magenta]%}┌[%T] kaho@%{$reset_color%}%{$fg_bold[megenta]%}Mi5sP-Fy%{$reset_color%}:%{$fg_bold[cyan]%}%~%{$reset_color%}$(git_prompt_info)
-%{$fg[magenta]%}└-> '
+    PROMPT='%{$fg[magenta]%}[%T] kaho at %{$reset_color%}%{$fg_bold[megenta]%}Mi5sP in %{$reset_color%}:%{$fg_bold[cyan]%}[%{$fg_bold[cyan]%}%~]%{$reset_color%}$(git_prompt_info)
+%{$fg[magenta]%}> '
 
     ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[green]%}"
     ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
