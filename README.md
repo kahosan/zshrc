@@ -1,1 +1,0 @@
-kaho zsh,Setting
